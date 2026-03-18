@@ -34,16 +34,16 @@ const About = () => {
 
                 {/* Tags */}
                 <div className="flex flex-wrap gap-4 mb-4">
-                    <span className="border border-borderlines text-secondary font-bold rounded-[40px] px-3 py-2 text-sm md:text-base hover:bg-secondary hover:text-white transition-colors duration-200">
+                    <span className="border border-borderlines text-secondary font-bold rounded-[40px] px-3 py-2 text-sm md:text-base hover:bg-secondary hover:text-text-white transition-colors duration-200">
                         Modern fitness equipment
                     </span>
-                    <span className="border border-borderlines text-secondary font-bold rounded-[40px] px-3 py-2 text-sm md:text-base hover:bg-secondary hover:text-white transition-colors duration-200">
+                    <span className="border border-borderlines text-secondary font-bold rounded-[40px] px-3 py-2 text-sm md:text-base hover:bg-secondary hover:text-text-white transition-colors duration-200">
                         Certified professional trainers
                     </span>
-                    <span className="border border-borderlines text-secondary font-bold rounded-[40px] px-3 py-2 text-sm md:text-base hover:bg-secondary hover:text-white transition-colors duration-200">
+                    <span className="border border-borderlines text-secondary font-bold rounded-[40px] px-3 py-2 text-sm md:text-base hover:bg-secondary hover:text-text-white transition-colors duration-200">
                         Personalized workout guidance
                     </span>
-                    <span className="border border-borderlines text-secondary font-bold rounded-[40px] px-3 py-2 text-sm md:text-base hover:bg-secondary hover:text-white transition-colors duration-200">
+                    <span className="border border-borderlines text-secondary font-bold rounded-[40px] px-3 py-2 text-sm md:text-base hover:bg-secondary hover:text-text-white transition-colors duration-200">
                         Clean and motivating workout environment
                     </span>
                 </div>
