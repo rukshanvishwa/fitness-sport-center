@@ -4,6 +4,10 @@ import Hero from './sections/Hero'
 import StoryLine from './components/StoryLine'
 import About from './sections/About'
 import Services from './sections/Services'
+import Trainer from './sections/Trainer'
+import MembershipPlans from './sections/MembershipPlans'
+import Contact from './sections/Contact'
+
 
 const App = () => {
   return (
@@ -14,6 +18,9 @@ const App = () => {
         <StoryLine />
         <About />
         <Services />
+        <Trainer />
+        <MembershipPlans />
+        <Contact />
       </div>
 
     </>

@@ -34,7 +34,7 @@ const NavBar = () => {
                     </li>
                     <li>
                         <a href="#features" className="hover:text-accent transition-colors duration-200">
-                            Features / Services
+                            Services
                         </a>
                     </li>
                 </ul>
@@ -73,7 +73,7 @@ const NavBar = () => {
                         About
                     </a>
                     <a href="#features" onClick={() => setIsOpen(false)} className="hover:text-accent">
-                        Features / Services
+                        Services
                     </a>
                     <button
                         onClick={() => { window.location.href = "#contact"; setIsOpen(false); }}

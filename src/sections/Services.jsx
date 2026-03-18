@@ -5,7 +5,7 @@ const servicesData = [
     id: 1,
     title: "Personal Training",
     description: "Work one-on-one with certified trainers who design personalized workout plans tailored to your goals",
-    image: "/service/personal.jpg" 
+    image: "/service/personal.jpg"
   },
   {
     id: 2,
@@ -47,25 +47,25 @@ const Services = () => {
         <h2 className="text-[36px] font-bold text-center text-primary mb-12 tracking-wide uppercase">
           Our Services
         </h2>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
-          
+
           {servicesData.map((service) => (
-      
-            <div 
-              key={service.id} 
+
+            <div
+              key={service.id}
               className="relative rounded-[20px] overflow-hidden h-[400px] md:h-[450px] group cursor-pointer"
             >
-              
-              <img 
-                src={service.image} 
-                alt={service.title} 
+
+              <img
+                src={service.image}
+                alt={service.title}
                 className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-300 ease-in-out"
               />
-              
-              
+
+
               <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-transparent/10"></div>
-              
+
               <div className="absolute inset-0 p-8 flex flex-col justify-end items-center text-center">
                 <h3 className="text-[26px] font-bold text-text-white mb-3 tracking-wide">
                   {service.title}
