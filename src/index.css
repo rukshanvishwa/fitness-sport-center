@@ -1,10 +1,41 @@
-@import "tailwindcss";
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
-@theme {
-  --color-accent: #D5A310;
-  --color-primary: #040304;
-  --color-secondary: #2C2C2C;
-  --color-background: #F1F0EB;
-  --color-borderlines: #292113;
-  --color-text-white: #F1F0EB;
-}
+ @import "tailwindcss";
+
+ @layer base {
+   :root {
+     /* Light Mode */
+     --theme-bg: #F1F0EB;
+     --theme-primary: #040304;
+     --theme-secondary: #2C2C2C;
+     --theme-border: #292113;
+   }
+
+   .dark {
+     /* Dark Mode */
+     --theme-bg: #040304;
+     --theme-primary: #F1F0EB;
+     --theme-secondary: #A3A3A3;
+     --theme-border: #404040;
+   }
+ }
+
+
+ @theme {
+
+   --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+   --color-accent: #D5A310;
+   --color-text-white: #F1F0EB;
+
+   --color-background: var(--theme-bg);
+   --color-primary: var(--theme-primary);
+   --color-secondary: var(--theme-secondary);
+   --color-borderlines: var(--theme-border);
+ }
+
+ @layer base {
+   body {
+     @apply bg-background text-primary transition-colors duration-200;
+   }
+ }

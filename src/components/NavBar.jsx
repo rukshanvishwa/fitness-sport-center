@@ -1,24 +1,40 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { FaSun, FaMoon } from 'react-icons/fa';
 
 const NavBar = () => {
-
+    
     const [isOpen, setIsOpen] = useState(false);
 
+    //Dark mode state
+    const [isDarkMode, setIsDarkMode] = useState(() => {
+        return localStorage.getItem('theme') === 'dark';
+    });
+
+    useEffect(() => {
+        const root = document.documentElement;
+        if (isDarkMode) {
+            root.classList.add('dark');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            root.classList.remove('dark');
+            localStorage.setItem('theme', 'light');
+        }
+    }, [isDarkMode]);
+
     return (
+        <nav className="relative flex items-center justify-between px-30 max-md:px-5 py-5 w-full transition-colors duration-200">
 
-        <nav className="relative flex items-center justify-between px-30 max-md:px-5 py-5 w-full ">
-
-            {/* Logo Section */}
+            {/* Logo section */}
             <div className="flex">
                 <img
                     src="https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/logo.svg"
                     alt="Fitness-Sports-Center"
-                    className="w-[130px] h-auto "
+                    className="w-[130px] h-auto"
                 />
             </div>
 
-            {/* Nav container  */}
-            <div className="flex items-center gap-[69px] max-md:gap-5 z-50">
+            {/* Nav container */}
+            <div className="flex items-center gap-[69px] max-md:gap-4 z-50">
 
                 {/* Nav Links */}
                 <ul className="hidden md:flex items-center gap-[69px] font-bold text-secondary text-lg">
@@ -39,7 +55,19 @@ const NavBar = () => {
                     </li>
                 </ul>
 
-                {/* Contact Button  */}
+                <button
+                    onClick={() => setIsDarkMode(!isDarkMode)}
+                    className="text-2xl p-2 rounded-full text-secondary hover:bg-black/10 dark:hover:bg-white/10 transition-colors focus:outline-none flex items-center justify-center"
+                    aria-label="Toggle Dark Mode"
+                >
+                    {isDarkMode ? (
+                        <FaSun className="text-accent" /> 
+                    ) : (
+                        <FaMoon />
+                    )}
+                </button>
+
+                {/* Contact button */}
                 <button
                     onClick={() => window.location.href = "#contact"}
                     className="hidden md:block bg-accent hover:bg-[#b58712] text-text-white font-bold py-3 px-8 rounded-lg shadow-sm transition-colors duration-200 text-lg"
@@ -47,7 +75,7 @@ const NavBar = () => {
                     Contact Us
                 </button>
 
-                {/* Mobile Icon */}
+                {/* Mobile icon */}
                 <button
                     className="block md:hidden text-secondary focus:outline-none"
                     onClick={() => setIsOpen(!isOpen)}
@@ -63,9 +91,9 @@ const NavBar = () => {
 
             </div>
 
-            {/* Mobile Dropdown Menu */}
+            {/* Mobile dropdown men */}
             {isOpen && (
-                <div className="absolute top-full left-0 w-full bg-white flex flex-col items-center py-6 gap-6 md:hidden z-100 font-bold text-secondary text-lg  ">
+                <div className="absolute top-full left-0 w-full bg-background flex flex-col items-center py-6 gap-6 md:hidden z-100 font-bold text-secondary text-lg shadow-lg border-t border-borderlines/20">
                     <a href="#home" onClick={() => setIsOpen(false)} className="hover:text-accent">
                         Home
                     </a>

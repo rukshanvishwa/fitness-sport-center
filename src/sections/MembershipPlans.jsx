@@ -53,7 +53,7 @@ const MembershipPlans = () => {
 
                 {/* Headers */}
                 <div className="text-center mb-16">
-                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase text-black mb-6 tracking-wide">
+                    <h2 className="text-3xl md:text-4xl lg:text-5xl font-black uppercase  mb-6 tracking-wide">
                         Flexible Membership Plans
                     </h2>
                     <p className="text-secondary text-lg md:text-xl font-medium max-w-3xl mx-auto">
