@@ -5,43 +5,43 @@ const servicesData = [
     id: 1,
     title: "Personal Training",
     description: "Work one-on-one with certified trainers who design personalized workout plans tailored to your goals",
-    image: "/service/personal.jpg"
+    image: "https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/personal.jpg"
   },
   {
     id: 2,
     title: "Strength Training",
     description: "Build muscle, improve endurance, and increase your overall strength using professional gym equipment.",
-    image: "/service/strength.jpg"
+    image: "https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/strength.jpg"
   },
   {
     id: 3,
     title: "Group Fitness Classes",
     description: "Stay motivated with high-energy group sessions including HIIT, cardio training, and functional workouts.",
-    image: "/service/groupfit.jpg"
+    image: "https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/groupfit.jpg"
   },
   {
     id: 4,
     title: "Nutrition Guidance",
     description: "Achieve better results with expert advice on diet and nutrition to complement your training program.",
-    image: "/service/nutrition.jpg"
+    image: "https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/nutrition.jpg"
   },
   {
     id: 5,
     title: "Cardio Training",
     description: "Improve heart health and burn calories with our advanced cardio machines.",
-    image: "/service/cardio.jpg"
+    image: "https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/cardio.jpg"
   },
   {
     id: 6,
     title: "Fitness Assessments",
     description: "Track your progress and get expert feedback to improve your performance.",
-    image: "/service/fitnessass.jpg"
+    image: "https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/fitnessass.jpg"
   }
 ];
 
 const Services = () => {
   return (
-    <section id="features" className="py-16 px-6 mb-[10px]">
+    <section id="services" className="py-16 px-6 mb-[10px]">
       <div className="max-w-7xl mx-auto">
 
         <h2 className="text-[36px] font-bold text-center text-primary mb-12 tracking-wide uppercase">

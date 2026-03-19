@@ -11,7 +11,7 @@ const NavBar = () => {
             {/* Logo Section */}
             <div className="flex">
                 <img
-                    src="/logo.svg"
+                    src="https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/logo.svg"
                     alt="Fitness-Sports-Center"
                     className="w-[130px] h-auto "
                 />
@@ -33,7 +33,7 @@ const NavBar = () => {
                         </a>
                     </li>
                     <li>
-                        <a href="#features" className="hover:text-accent transition-colors duration-200">
+                        <a href="#services" className="hover:text-accent transition-colors duration-200">
                             Services
                         </a>
                     </li>
@@ -72,7 +72,7 @@ const NavBar = () => {
                     <a href="#about" onClick={() => setIsOpen(false)} className="hover:text-accent">
                         About
                     </a>
-                    <a href="#features" onClick={() => setIsOpen(false)} className="hover:text-accent">
+                    <a href="#services" onClick={() => setIsOpen(false)} className="hover:text-accent">
                         Services
                     </a>
                     <button

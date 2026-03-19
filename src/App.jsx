@@ -7,6 +7,8 @@ import Services from './sections/Services'
 import Trainer from './sections/Trainer'
 import MembershipPlans from './sections/MembershipPlans'
 import Contact from './sections/Contact'
+import Footer from './sections/Footer'
+
 
 
 const App = () => {
@@ -21,6 +23,8 @@ const App = () => {
         <Trainer />
         <MembershipPlans />
         <Contact />
+        <Footer />
+
       </div>
 
     </>

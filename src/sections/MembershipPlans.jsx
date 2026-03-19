@@ -48,7 +48,7 @@ const plansData = [
 
 const MembershipPlans = () => {
     return (
-        <section className="py-16 md:py-24 px-6 md:px-12 overflow-hidden">
+        <section id='membership' className="py-16 md:py-24 px-6 md:px-12 overflow-hidden">
             <div className="max-w-7xl mx-auto ">
 
                 {/* Headers */}

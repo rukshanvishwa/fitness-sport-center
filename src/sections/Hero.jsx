@@ -3,7 +3,7 @@ import React from 'react';
 const Hero = () => {
     return (
 
-        <section className="min-h-[60vh] flex items-center py-12 md:py-8 relative overflow-hidden px-6 ">
+        <section id='home' className="min-h-[60vh] flex items-center py-12 md:py-8 relative overflow-hidden px-6 ">
 
 
             <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-between gap-12 md:gap-8 lg:gap-5">
@@ -34,7 +34,7 @@ const Hero = () => {
                 <div className="w-full md:w-[40%] lg:w-[30%] flex justify-center md:justify-end z-10 mt-8 md:mt-0">
 
                     <img
-                        src="/hero.png"
+                        src="https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/hero.png"
                         alt="hero-image"
                         className="w-[80%] sm:w-[70%] md:w-full h-auto object-cover scale-140 md:scale-[1.6]"
                     />

@@ -3,7 +3,7 @@ import React from 'react';
 const Trainer = () => {
     return (
 
-        <section className=" max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-15 lg:gap-30 justify-center overflow-hidden relative">
+        <section id='trainers' className=" max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-15 lg:gap-30 justify-center overflow-hidden relative">
 
 
 
@@ -44,7 +44,7 @@ const Trainer = () => {
             {/* Image Section */}
             <div className="w-full md:w-[40%] flex justify-end">
                 <img
-                    src="/trainer.png"
+                    src="https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/trainer.png"
                     alt="Fitness model holding dumbbells"
                     className="w-[340px] h-auto "
                 />

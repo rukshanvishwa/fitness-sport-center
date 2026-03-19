@@ -8,7 +8,7 @@ const About = () => {
             {/* Image Section */}
             <div className="w-full md:w-[40%] flex justify-start">
                 <img
-                    src="/aboutus.png"
+                    src="https://bsrejqjahgobpcljlgho.supabase.co/storage/v1/object/public/image/aboutus.png"
                     alt="Fitness model holding dumbbells"
                     className="w-[310px] h-auto "
                 />
