@@ -45,4 +45,4 @@ npm run preview
 
 ## Live Link
 
-- Add your deployed application URL here: 
+- Add your deployed application URL here: https://fitness-sport-center.vercel.app/
